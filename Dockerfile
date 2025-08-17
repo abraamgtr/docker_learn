@@ -1,9 +1,9 @@
 FROM python:3.10-slim
 
 #don't write .pyc
-ENV PYTHONDONTWRITEBYTECODE
+ENV PYTHONDONTWRITEBYTECODE 1
 #show current terminal output only
-ENV PYTHONUNBUFFERED
+ENV PYTHONUNBUFFERED 1
 # i want to run the django project in the code directory
 WORKDIR /code
 
